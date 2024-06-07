@@ -13,10 +13,36 @@
   <header class="header">
     <div class="title">
       <h1>Picture This!</h1>
+
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
 
+    <picture>
+     <source
+        media="(max-width: 960px)"
+        srcset="
+          images/sizes/museum-320_x_180.png 320w,
+          images/sizes/museum-480_x_270.png 480w,
+          images/sizes/museum-640_x_360.png 640w,
+          images/sizes/museum-720_x_405.png 720w,
+          images/sizes/museum-960_x_540.png 960w,
+          images/sizes/museum-1440_x_810.png 1440w,
+          images/sizes/museum-2160_x_1215.png 2160w,
+          images/sizes/museum-2880_x_1621.png 2880w"
+        sizes="(max-width: 320px) 320px, 
+               (max-width: 480px) 480px,
+               (max-width: 640px) 640px,
+               (max-width: 720px) 720px,
+               (max-width: 960px) 960px,
+               (max-width: 1440px) 1440px,
+               (max-width: 2160px) 2160px,
+               (max-width: 2880px) 2880px">
+      
+      <img src="images/museum-960_x_540.png" alt="placeholder">
+    </picture>
+    
+   
+        
   </header>
 </body>
 
